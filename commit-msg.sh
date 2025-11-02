@@ -4,7 +4,7 @@ COMMIT_MSG_FILE=$1
 
 COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
 
-CONVENTIONAL_COMMIT_REGEX='^(feat|fix|docs|style|refactor|test|chore|build|ci|perf|revert)(\([a-zA-Z0-9_.-]+\))?(!)?:\s.*(:[a-zA-Z0-9_+-]+:)?$'
+CONVENTIONAL_COMMIT_REGEX='^(feat|fix|docs|style|refactor|test|chore|build|ci|perf|revert|raw|cleanup|remove)(\([a-zA-Z0-9_.-]+\))?(!)?:\s.*(:[a-zA-Z0-9_+-]+:)?$'
 
 if ! [[ $COMMIT_MSG =~ $CONVENTIONAL_COMMIT_REGEX ]]; then
     echo "ERRO: A mensagem de commit não segue o formato do Conventional Commits."
