@@ -2,6 +2,12 @@
 
 exec < /dev/tty
 
+if [ "$2" == "message" ]; then
+  echo "🟡 Ignorando hook — commit manual (-m) detectado."
+  exit 0
+fi
+
+
 echo "Selecione o tipo de commit:"
 echo "1. feat: Novo recurso ✨"
 echo "2. fix: Correção de bug 🐛"
