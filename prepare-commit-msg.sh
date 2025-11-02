@@ -22,6 +22,7 @@ echo "10. ci: Integração contínua 🧱"
 echo "11. raw: Dados RAW 🗃️"
 echo "12. cleanup: Limpeza de código 🧹"
 echo "13. remove: Remoção de arquivos 🗑️"
+echo "14. revert: Revertendo um commit ⏪"
 echo ""
 
 read -p "Digite o número correspondente ao tipo de commit: " commit_type
@@ -40,6 +41,7 @@ case $commit_type in
   11) type="raw";      emoji=":card_file_box:";; # 🗃️
   12) type="cleanup";  emoji=":broom:";;         # 🧹
   13) type="remove";   emoji=":wastebasket:";;   # 🗑️
+  14) type="revert";   emoji=":rewind:";;   		 # ⏪
   *)  echo "❌ Tipo de commit inválido"; exit 1;;
 esac
 
