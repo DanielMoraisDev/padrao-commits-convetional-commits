@@ -52,7 +52,7 @@ cp caminho/para/prepare-commit-msg.sh .git/hooks/prepare-commit-msg
 
 > **Nota:** Substitua `caminho/para/prepare-commit-msg.sh` pelo caminho real do arquivo.
 
-### Passo 5: Dê permissão de execução ao script ✅
+### Passo 3: Dê permissão de execução ao script ✅
 
 Para que o Git possa executar o script, você precisa dar permissão de execução:
 
@@ -60,11 +60,7 @@ Para que o Git possa executar o script, você precisa dar permissão de execuç�
 chmod +x .git/hooks/prepare-commit-msg
 ```
 
-## Complementos de commits 💻
-
-- **Rodapé:** informação sobre o revisor e número do card no Trello ou Jira. Exemplo: Reviewed-by: Elisandro Mello Refs #133
-- **Corpo:** descrições mais precisas do que está contido no commit, apresentando impactos e os motivos pelos quais foram empregadas as alterações no código, como também instruções essenciais para intervenções futuras. Exemplo: see the issue for details on typos fixed.
-- **Descrições:** uma descrição sucinta da mudança. Exemplo: correct minor typos in code
+### OBS: Siga os mesmos passos para `commit-msg.sh` 📋
 
 ## Padrões de emojis 💈
 
@@ -256,103 +252,6 @@ chmod +x .git/hooks/prepare-commit-msg
       <td>Dados</td>
       <td>🗃️ <code>:card_file_box:</code></td>
       <td><code>raw</code></td>
-    </tr>
-  </tbody>
-</table>
-
-## 💻 Exemplos
-
-<table>
-  <thead>
-    <tr>
-      <th>Comando Git</th>
-      <th>Resultado no GitHub</th>
-    </tr>
-  </thead>
- <tbody>
-    <tr>
-      <td>
-        <code>git commit -m ":tada: Commit inicial"</code>
-      </td>
-      <td>🎉 Commit inicial</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":books: docs: Atualização do README"</code>
-      </td>
-      <td>📚 docs: Atualização do README</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":bug: fix: Loop infinito na linha 50"</code>
-      </td>
-      <td>🐛 fix: Loop infinito na linha 50</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":sparkles: feat: Página de login"</code>
-      </td>
-      <td>✨ feat: Página de login</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":bricks: ci: Modificação no Dockerfile"</code>
-      </td>
-      <td>🧱 ci: Modificação no Dockerfile</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":recycle: refactor: Passando para arrow functions"</code>
-      </td>
-      <td>♻️ refactor: Passando para arrow functions</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":zap: perf: Melhoria no tempo de resposta"</code>
-      </td>
-      <td>⚡ perf: Melhoria no tempo de resposta</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":boom: fix: Revertendo mudanças ineficientes"</code>
-      </td>
-      <td>💥 fix: Revertendo mudanças ineficientes</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":lipstick: feat: Estilização CSS do formulário"</code>
-      </td>
-      <td>💄 feat: Estilização CSS do formulário</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":test_tube: test: Criando novo teste"</code>
-      </td>
-      <td>🧪 test: Criando novo teste</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":bulb: docs: Comentários sobre a função LoremIpsum( )"</code>
-      </td>
-      <td>💡 docs: Comentários sobre a função LoremIpsum( )</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":card_file_box: raw: RAW Data do ano aaaa"</code>
-      </td>
-      <td>🗃️ raw: RAW Data do ano aaaa</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":broom: cleanup: Eliminando blocos de código comentados e variáveis não utilizadas na função de validação de formulário"</code>
-      </td>
-      <td>🧹 cleanup: Eliminando blocos de código comentados e variáveis não utilizadas na função de validação de formulário</td>
-    </tr>
-    <tr>
-      <td>
-        <code>git commit -m ":wastebasket: remove: Removendo arquivos não utilizados do projeto para manter a organização e atualização contínua"</code>
-      </td>
-      <td>🗑️ remove: Removendo arquivos não utilizados do projeto para manter a organização e atualização contínua</td>
     </tr>
   </tbody>
 </table>

@@ -21,21 +21,22 @@ echo ""
 read -p "Digite o número correspondente ao tipo de commit: " commit_type
 
 case $commit_type in
-  1) type="feat"; emoji="✨";;
-  2) type="fix"; emoji="🐛";;
-  3) type="docs"; emoji="📚";;
-  4) type="test"; emoji="🧪";;
-  5) type="build"; emoji="➕";;
-  6) type="perf"; emoji="⚡";;
-  7) type="style"; emoji="🎨";;
-  8) type="refactor"; emoji="♻️";;
-  9) type="chore"; emoji="🔧";;
-  10) type="ci"; emoji="🧱";;
-  11) type="raw"; emoji="🗃️";;
-  12) type="cleanup"; emoji="🧹";;
-  13) type="remove"; emoji="🗑️";;
-  *) echo "Tipo de commit inválido"; exit 1;;
+  1)  type="feat";     emoji=":sparkles:";;      # ✨
+  2)  type="fix";      emoji=":bug:";;           # 🐛
+  3)  type="docs";     emoji=":book:";;          # 📚
+  4)  type="test";     emoji=":test_tube:";;     # 🧪
+  5)  type="build";    emoji=":heavy_plus_sign:";; # ➕
+  6)  type="perf";     emoji=":zap:";;           # ⚡
+  7)  type="style";    emoji=":art:";;           # 🎨
+  8)  type="refactor"; emoji=":recycle:";;       # ♻️
+  9)  type="chore";    emoji=":wrench:";;        # 🔧
+  10) type="ci";       emoji=":bricks:";;        # 🧱
+  11) type="raw";      emoji=":card_file_box:";; # 🗃️
+  12) type="cleanup";  emoji=":broom:";;         # 🧹
+  13) type="remove";   emoji=":wastebasket:";;   # 🗑️
+  *)  echo "❌ Tipo de commit inválido"; exit 1;;
 esac
+
 
 read -p "Deseja adicionar um escopo (ex: api, ui, db)? (deixe vazio se não): " scope
 read -p "Digite a mensagem do commit: " message
